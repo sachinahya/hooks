@@ -1,0 +1,5 @@
+root: true
+extends:
+  - '@sachinahya/myconfig/typescript'
+  - '@sachinahya/myconfig/typescript-type-checking'
+  - '@sachinahya/myconfig/react'

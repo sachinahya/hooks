@@ -1,0 +1,43 @@
+{
+  "name": "@sachinahya/hooks",
+  "version": "0.1.0",
+  "description": "A set of utility React hooks.",
+  "author": "Sachin Ahya",
+  "license": "MIT",
+  "homepage": "https://github.com/sachinahya/hooks",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/!(*.test).*"
+  ],
+  "scripts": {
+    "prepublish": "yarn lint --max-warnings=0 && rm -rf dist && tsc",
+    "test": "jest",
+    "lint": "eslint ./**/*.{js,ts}"
+  },
+  "dependencies": {
+    "@sachinahya/utils": "^0.1.4",
+    "fuse.js": "^3.6.1"
+  },
+  "peerDependencies": {
+    "fuse.js": ">= 3.4.6 < 4.0.0",
+    "react": ">= 16.8.0"
+  },
+  "devDependencies": {
+    "@sachinahya/eslint-config-myconfig": "^0.2.1",
+    "@types/jest": "^25.1.4",
+    "@types/react": "^16.9.26",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jsdoc": "^22.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "jest": "^25.2.3",
+    "jest-watch-typeahead": "^0.4.2",
+    "react": "^16.13.1",
+    "typescript": "~3.8.3"
+  }
+}
