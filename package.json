@@ -1,12 +1,13 @@
 {
   "name": "@sachinahya/hooks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A set of utility React hooks.",
   "author": "Sachin Ahya",
   "license": "MIT",
   "homepage": "https://github.com/sachinahya/hooks",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
   "files": [
     "dist/**/!(*.test).*"
   ],
@@ -20,7 +21,6 @@
     "fuse.js": "^3.6.1"
   },
   "peerDependencies": {
-    "fuse.js": ">= 3.4.6 < 4.0.0",
     "react": ">= 16.8.0"
   },
   "devDependencies": {
@@ -39,5 +39,9 @@
     "jest-watch-typeahead": "^0.4.2",
     "react": "^16.13.1",
     "typescript": "~3.8.3"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
 }
